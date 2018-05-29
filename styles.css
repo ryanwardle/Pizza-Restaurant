@@ -6,4 +6,66 @@
 
 body{
   font-family: 'Lora', serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+
+header{
+  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/header-img.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/*NAVIGATION*************/
+
+nav{
+  padding-top: 10px;
+}
+
+.nav li a,
+.nav li a:link,
+.nav li a:hover,
+.nav li a:active,
+.nav li a:visited{
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #EEAA78;
+  transition: 1s;
+}
+
+.nav li a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: #EEAA78;
+  transition: width 1s;
+}
+
+.nav li a:hover::after{
+  width: 100%;
+  transition: width 1s;
+}
+
+
+.nav-div ul{
+  justify-content: space-around;
+}
+
+
+/*RESTAURANT NAME*/
+
+.restaurant-name{
+  padding-top: 150px;
+  text-align: center;
+}
+
+.restaurant-name h1{
+  font-size: 80px;
 }
