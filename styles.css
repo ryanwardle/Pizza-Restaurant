@@ -82,3 +82,22 @@ nav{
   background-color: #EEE;
   color: #222;
 }
+
+.description-row{
+  justify-content: center;
+  text-align: center;
+}
+
+.info-row{
+  text-align: center;
+  justify-content: center;
+}
+
+.about-title{
+  margin-top: 20px;
+}
+
+.info-location,
+.info-hours{
+  margin-top: 50px;
+}
