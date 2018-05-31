@@ -8,12 +8,13 @@ body{
   font-family: 'Lora', serif;
   font-size: 18px;
   font-weight: 300;
-  color: #EEE;
+  color: #222;
   overflow-x: hidden;
 }
 
 
 header{
+  color: #EEE;
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/header-img.jpeg);
   background-repeat: no-repeat;
   background-position: center;
@@ -58,6 +59,12 @@ nav{
   justify-content: space-around;
 }
 
+/*REUSABLE STYLING, USED IN MORE THAN ONE SECTION*/
+
+h2{
+  margin-top: 20px;
+}
+
 
 /*RESTAURANT INFO*/
 
@@ -80,7 +87,6 @@ nav{
 
 .about-section{
   background-color: #EEE;
-  color: #222;
 }
 
 .description-row{
@@ -93,11 +99,14 @@ nav{
   justify-content: center;
 }
 
-.about-title{
-  margin-top: 20px;
-}
-
 .info-location,
 .info-hours{
   margin-top: 50px;
+}
+
+
+/*MENU SECTION*/
+
+.menu-section{
+  background-color: #E6E6E6;
 }
