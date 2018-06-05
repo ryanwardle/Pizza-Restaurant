@@ -135,3 +135,14 @@ h2{
 .item-div h4{
   margin-bottom: 10px;
 }
+
+
+/*CONTACT SECTION*/
+
+.contact-header{
+  text-align: center;
+}
+
+.contact-section{
+  background-color: #EEE;
+}
