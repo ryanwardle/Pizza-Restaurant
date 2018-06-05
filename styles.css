@@ -146,3 +146,25 @@ h2{
 .contact-section{
   background-color: #EEE;
 }
+
+.contact-section p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form-control{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-div{
+  text-align: center;
+}
+
+button{
+
+}
+
+button:hover{
+  cursor: pointer;
+}
