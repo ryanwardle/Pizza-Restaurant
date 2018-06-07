@@ -72,6 +72,7 @@ nav{
   transition: 1s;
 }
 
+
 /*REUSABLE STYLING, USED IN MORE THAN ONE SECTION*/
 
 h2{
@@ -183,7 +184,8 @@ h2{
 
 button{
   width: 200px;
-  background-color: #A7D2CB;
+  background-color: #222;
+  color: #F2D388; /*#A7D2CB;*/
   margin-bottom: 40px;
   margin-top: 20px;
 }
