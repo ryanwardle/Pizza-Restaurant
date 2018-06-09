@@ -64,19 +64,28 @@ $('a[href*="#"]')
 
   //ANIMATE NAV LINK ON SCROLL
 
-//NEED TO FIGURE OUT HOW TO DISPLAY, I THINK SPECIFICTY IS THE PROBLEM
+  let scrollLink = $('.scroll');
+
   $(window).scroll(function(){
-    let scrollLink = $('.scroll');
-    let scrollbarLocation = $(this).scrollTop();
+    let scrollBarLocation =$(this).scrollTop();
 
     scrollLink.each(function(){
-
       let sectionOffset = $(this.hash).offset().top;
+      let removeHover = $('.about-section').offset().top;
 
-      if (sectionOffset <= scrollbarLocation) {
-        $(this).parent().addClass('.nav li a::after');
-        $(this).parent().siblings().removeClass('.nav li a::after');
+      if (removeHover <= scrollBarLocation) {
+
+        $(this).parent().css('color', 'red')
+        //NEED TO FIGURE OUT WHAT TO PUT HERE, REMOVE HOVER CLASS OR
+        //OVERRIDE IT , OR JUST GET COLOR TOC
+
+      }
+
+      if (sectionOffset <= scrollBarLocation) {
+        $(this).parent().addClass('underline');
+        $(this).parent().siblings().removeClass('underline');
       }
     });
   });
+
 });
