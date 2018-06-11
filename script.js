@@ -71,17 +71,10 @@ $('a[href*="#"]')
 
     scrollLink.each(function(){
       let sectionOffset = $(this.hash).offset().top;
-      let removeHover = $('.about-section').offset().top;
-
-      if (removeHover <= scrollBarLocation) {
-
-        $(this).parent().css('color', 'red')
-        //NEED TO FIGURE OUT WHAT TO PUT HERE, REMOVE HOVER CLASS OR
-        //OVERRIDE IT , OR JUST GET COLOR TOC
-
-      }
 
       if (sectionOffset <= scrollBarLocation) {
+        $(this).parent().addClass('no-hover');
+        $(this).parent().siblings().removeClass('no-hover');
         $(this).parent().addClass('underline');
         $(this).parent().siblings().removeClass('underline');
       }

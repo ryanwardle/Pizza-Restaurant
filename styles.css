@@ -72,9 +72,15 @@ nav{
   transition: 1s;
 }
 
+.no-hover{
+  pointer-events: none;
+}
+
 .underline{
   border-bottom: 1px solid #F2D388;
 }
+
+
 /*REUSABLE STYLING, USED IN MORE THAN ONE SECTION*/
 
 h2{
