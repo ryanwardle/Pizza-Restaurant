@@ -62,7 +62,7 @@ $('a[href*="#"]')
 
 
 
-  //ANIMATE NAV LINK ON SCROLL
+  //UNDERLINE NAV LINK ON SCROLL
 
   let scrollLink = $('.scroll');
 
@@ -72,7 +72,7 @@ $('a[href*="#"]')
     scrollLink.each(function(){
       let sectionOffset = $(this.hash).offset().top;
 
-      if (sectionOffset <= scrollBarLocation) {
+      if (sectionOffset - 50 <= scrollBarLocation) {
         $(this).parent().addClass('no-hover');
         $(this).parent().siblings().removeClass('no-hover');
         $(this).parent().addClass('underline');
