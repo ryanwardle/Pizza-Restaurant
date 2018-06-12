@@ -85,7 +85,7 @@ nav{
 .mobile-nav-icon{
   float: right;
   cursor: pointer;
-  display: non;
+  display: none;
   padding-right: 20px;
 }
 

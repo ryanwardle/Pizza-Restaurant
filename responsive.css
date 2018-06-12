@@ -9,8 +9,28 @@
     font-size: .85em;
   }
 
-  .nav-div ul{
+  /*.nav-div ul{
     display: none;
+  }*/
+
+  .mobile-nav-icon{
+    display: inline-block;
+  }
+
+  /*******CLASS NAV IS CREATING A PRBLEM BECAUSE EVERYTHING IS DISPLAYING INLINE,
+  MAY NEED TO CHANGE NAME OF CLASS TO MAIN-NAV BECAUSE BOOTSTRAP CLASS NAV IS I THINK IS CAUSING THIS PROBLEM*/
+
+  .nav{
+    float: left;
+  }
+
+  .nav li{
+    display: block;
+  }
+
+  .nav li .scroll:link,
+  .nav li .scroll:visited{
+    display: block;
   }
 
   .info-hours{
