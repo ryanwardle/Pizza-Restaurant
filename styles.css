@@ -80,6 +80,18 @@ nav{
   border-bottom: 1px solid #F2D388;
 }
 
+/*MOBILE NAV***********/
+
+.mobile-nav-icon{
+  float: right;
+  cursor: pointer;
+  display: non;
+  padding-right: 20px;
+}
+
+.mobile-nav-icon i{
+  font-size: 20px;
+}
 
 /*REUSABLE STYLING, USED IN MORE THAN ONE SECTION*/
 

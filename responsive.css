@@ -9,6 +9,10 @@
     font-size: .85em;
   }
 
+  .nav-div ul{
+    display: none;
+  }
+
   .info-hours{
     display: inline-flex;
     align-items: center;
