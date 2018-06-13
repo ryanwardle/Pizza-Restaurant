@@ -9,28 +9,33 @@
     font-size: .85em;
   }
 
-  /*.nav-div ul{
+  .nav-div ul{
     display: none;
-  }*/
+  }
 
   .mobile-nav-icon{
     display: inline-block;
+    float: right;
   }
-
-  /*******CLASS NAV IS CREATING A PRBLEM BECAUSE EVERYTHING IS DISPLAYING INLINE,
-  MAY NEED TO CHANGE NAME OF CLASS TO MAIN-NAV BECAUSE BOOTSTRAP CLASS NAV IS I THINK IS CAUSING THIS PROBLEM*/
 
   .nav{
     float: left;
+    display: block;
+    padding-left: 5%;
+    margin: 0;
   }
 
-  .nav li{
+  .nav-div ul li{
     display: block;
   }
 
-  .nav li .scroll:link,
-  .nav li .scroll:visited{
+  .nav-div ul li a:link,
+  .nav-div ul li a:visited{
     display: block;
+  }
+
+  .nav li a::after{
+    display: none;
   }
 
   .info-hours{
@@ -49,6 +54,13 @@
   }
 
 }
+
+@media only screen and (max-width: 650px){
+  .general-info{
+    padding-top: 30px;
+  }
+  }
+
 
 @media only screen and (max-width: 480px){
   .general-info p{
