@@ -98,4 +98,22 @@ $('a[href*="#"]')
     }
   });
 
+
+  //BUTTON SUBMIT ALERT
+
+  $('.submit-btn').click(function(){
+    alert('Thank you, we will be e-mailing you shortly');
+
+    $('.first-name').wrap('<form>').closest('form').get(0).reset();
+    $('.first-name').unwrap();
+    $('.last-name').wrap('<form>').closest('form').get(0).reset();
+    $('.last-name').unwrap();
+    $('.e-mail').wrap('<form>').closest('form').get(0).reset();
+    $('.e-mail').unwrap();
+    $('.text-area').wrap('<form>').closest('form').get(0).reset();
+    $('.text-area').unwrap();
+
+
+  });
+
 });
