@@ -72,7 +72,7 @@ $('a[href*="#"]')
     scrollLink.each(function(){
       let sectionOffset = $(this.hash).offset().top;
 
-      if (sectionOffset - 50 <= scrollBarLocation) {
+      if (sectionOffset <= scrollBarLocation) {
         $(this).parent().addClass('no-hover');
         $(this).parent().siblings().removeClass('no-hover');
         $(this).parent().addClass('underline');
@@ -102,7 +102,7 @@ $('a[href*="#"]')
   //BUTTON SUBMIT ALERT
 
   $('.submit-btn').click(function(){
-    alert('Thank you, we will be e-mailing you shortly');
+    alert('Thank you, we will be contacting you soon!')
 
     $('.first-name').wrap('<form>').closest('form').get(0).reset();
     $('.first-name').unwrap();

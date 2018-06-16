@@ -15,7 +15,7 @@ body{
 
 header{
   color: #EEE;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/header-img.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/header-img-min.jpeg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -214,6 +214,9 @@ button:hover{
   cursor: pointer;
 }
 
+.alert{
+  display: none;
+}
 
 /*FOOTER*****/
 
