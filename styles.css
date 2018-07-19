@@ -1,7 +1,8 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body{
@@ -15,6 +16,9 @@ body{
 
 header{
   color: #EEE;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.7)), to(rgba(0,0,0,0.7))), url("img/header-img-min.jpeg");
+  background-image: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/header-img-min.jpeg");
+  background-image: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/header-img-min.jpeg");
   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("img/header-img-min.jpeg");
   background-repeat: no-repeat;
   background-position: center;
@@ -37,6 +41,8 @@ nav{
   text-transform: uppercase;
   text-decoration: none;
   color: #F2D388;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 
@@ -46,17 +52,22 @@ nav{
   width: 0;
   height: 1px;
   background: #F2D388;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
   transition: width 1s;
 }
 
 .nav li a:hover::after{
   width: 100%;
+  -webkit-transition: width 1s;
+  -o-transition: width 1s;
   transition: width 1s;
 }
 
 
 .nav-div ul{
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /*Sticky Nav Class*/
@@ -69,6 +80,8 @@ nav{
   color: #EEE;
   padding: 15px 0;
   z-index: 1;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 
@@ -127,7 +140,9 @@ h2{
 
 .description-row,
 .info-row{
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -240,11 +255,15 @@ footer p{
 
 .footer-left li a{
   color: #222;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 
 .footer-left li a:hover{
   color: #999;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
   text-decoration: none;
 }
