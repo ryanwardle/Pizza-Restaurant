@@ -2,14 +2,13 @@ $(document).ready(function(){
 
 //STICKY NAV
   let navOffset = $('.about-section').offset().top;
-
   $('nav').wrap('<div class= "nav-placeholder"></div>');
   $('.nav-placeholder').height($('nav').outerHeight());
 
   $(window).scroll(function(){
     let scrollPos = $(window).scrollTop();
 
-    if (scrollPos >= navOffset) {
+    if (scrollPos >= navOffset - 65) {
       $('nav').addClass('fixed');
     }else {
       $('nav').removeClass('fixed');
@@ -43,7 +42,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 60
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
@@ -72,7 +71,7 @@ $('a[href*="#"]')
     scrollLink.each(function(){
       let sectionOffset = $(this.hash).offset().top;
 
-      if (sectionOffset <= scrollBarLocation) {
+      if (sectionOffset - 65 <= scrollBarLocation) {
         $(this).parent().addClass('no-hover');
         $(this).parent().siblings().removeClass('no-hover');
         $(this).parent().addClass('underline');
