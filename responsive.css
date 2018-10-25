@@ -38,15 +38,24 @@
     display: none;
   }
 
-  .info-hours{
-    display: inline-flex;
-    align-items: center;
+  .info-row{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .info-row div:not(#map){
+    min-height: 300px;
+  }
+
+  .info-hours .wrapper{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 
-  .info-location h3{
-    display: flex;
-    justify-content: center;
+  .info-hours .wrapper h3{
+    margin-top: 50px;
   }
 
   footer{

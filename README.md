@@ -18,3 +18,8 @@ Godfather's Pizza is a fictional restaurant, for which I have created and design
 3. bootstrap
 4. jQuery
 5. Javascript
+
+#### Problems I encountered and how I solved them
+When making this website responsive in smaller devices, the elements in the About section would collapse in one another.
+To solve, I used overflow: hidden; on the parent element, and then set a min-height to the child elements. After that I centered the element, that
+was collapsing and then set a margin top to create space.
